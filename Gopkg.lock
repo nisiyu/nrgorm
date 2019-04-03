@@ -3,31 +3,50 @@
 
 [[projects]]
   branch = "master"
+  digest = "1:358f9731027e87f8ae3a7e52f0473031be47d1e041295b3c0afc84dc779c0666"
   name = "github.com/erikstmartin/go-testdb"
   packages = ["."]
+  pruneopts = ""
   revision = "8d10e4a1bae52cd8b81ffdec3445890d6dccab3d"
 
 [[projects]]
-  branch = "master"
+  digest = "1:7d4958827c8f2d9d31e24d9a3a52194eb179f77d854692e57954c516ecf76748"
   name = "github.com/jinzhu/gorm"
   packages = ["."]
-  revision = "b1885a643b4977c9089d77eb07c0fd96591f94b8"
+  pruneopts = ""
+  revision = "472c70caa40267cb89fd8facb07fe6454b578626"
+  version = "v1.9.2"
 
 [[projects]]
   branch = "master"
+  digest = "1:a0c0f06f12f4b83b89eec79114265c54e9e300b8ddda0f0f3fb49a685283fa6c"
   name = "github.com/jinzhu/inflection"
   packages = ["."]
+  pruneopts = ""
   revision = "1c35d901db3da928c72a72d8458480cc9ade058f"
 
 [[projects]]
+  digest = "1:6921a84aa66af28f35794c0369fc5eb98081d6e23afd4c592e99ed8e7c90b11d"
   name = "github.com/newrelic/go-agent"
-  packages = [".","internal","internal/jsonx","internal/logger","internal/sysinfo","internal/utilization"]
+  packages = [
+    ".",
+    "internal",
+    "internal/jsonx",
+    "internal/logger",
+    "internal/sysinfo",
+    "internal/utilization",
+  ]
+  pruneopts = ""
   revision = "29ec3cd1bb2f21d21d36da37dae52695cb2c3a17"
   version = "v1.9.0"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "f91ff87b08be9d3b07050279c6164e68025d2d18de826c117163988d351c934c"
+  input-imports = [
+    "github.com/erikstmartin/go-testdb",
+    "github.com/jinzhu/gorm",
+    "github.com/newrelic/go-agent",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
